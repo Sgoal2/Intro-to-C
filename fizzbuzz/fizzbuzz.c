@@ -9,7 +9,11 @@
     Don't forget to include newlines '\n' in your printf statements!
 */
 int fizzbuzz(int n)
-{
+{ int n; for(n=1; n<50; n++)
+    if(n%3==0)
+    printf("Fizz\n");
+// n%5= Buzz
+// n%5 && n/3 =fizzbuzz
 
 }
 
