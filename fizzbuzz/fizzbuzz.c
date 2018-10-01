@@ -9,13 +9,34 @@
     Don't forget to include newlines '\n' in your printf statements!
 */
 int fizzbuzz(int n)
-{ int n; for(n=1; n<50; n++)
-    if(n%3==0)
-    printf("Fizz\n");
+{ 
+    int counter = 0;
+    for(int i=0; i<n; i++)
+    {
+        if (i % 5 == 0 && i % 3 == 0)
+        {
+        printf("FizzBuzz\n");
+        }
+    
+        else if(i % 3 == 0)
+        {
+        printf("Fizz\n");
+        }
+    
+        else if(i % 5 == 0)
+        {
+        printf("Buzz\n");
+        }else{
+        counter++;
+        }
+    }
+    return counter;
+}
+    
 // n%5= Buzz
 // n%5 && n/3 =fizzbuzz
 
-}
+
 
 #ifndef TESTING
 int main(void)
